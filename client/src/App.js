@@ -1,10 +1,12 @@
-import Navbar from './Navbar'
+import Navbar from './components/Navbar'
+import Main from './components/Main'
+
 export default function App() {
 
   return (
     <div className="App">
       <Navbar />
-      <p>Hello, World!</p>
+      <Main />
     </div>
   )
 }
