@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Main from './components/Main'
+import ContactForm from './components/ContactForm'
 
 export default function App() {
 
@@ -7,6 +8,7 @@ export default function App() {
     <div className="App">
       <Navbar />
       <Main />
+      <ContactForm />
     </div>
   )
 }

@@ -24,14 +24,14 @@ nav > ul {
     margin: 0px 60px;
 }
 
-li {
+nav > ul > li {
     display: inline-block;
     margin: 0px 30px;
     font-size: 1.6em;
     color: #F27059;
 }
 
-li:hover {
+nav > ul > li:hover {
     color: #F7B267;
     cursor: pointer;
 }
@@ -41,14 +41,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px;
+    margin: 100px;
 }
 
-img {
+main > img {
     height: 350px;
     margin-right: 150px;
     border: 2px solid #F27059;
     border-radius: 100%;
+    padding: 3px;
 }
 
 button {
@@ -66,4 +67,36 @@ button:hover {
     cursor: pointer;
     background-color: #F27059;
     color: #F5F5F5;
+}
+
+.contact {
+    margin-top: 160px;
+    text-align: center;
+    color: #F27059;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 1.4em;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input, textarea {
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.contact-grid > input {
+    height: 32px;
+}
+
+.contact-grid > textarea {
+    height: 128px;
+    grid-column: span 2;
+}
+
+.contact > button {
+    margin: 40px;
 }
