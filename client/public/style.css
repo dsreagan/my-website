@@ -1,3 +1,7 @@
+* {
+    font-family: 'Permanent Marker', 'Gill Sans', Calibri, sans-serif;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -12,8 +16,7 @@ nav {
     width: 100%;
     /* position: fixed;
     top: 0; */
-    background-color: #F5F5F5;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(#F5F5F5 80%, #e0e0e052);
 }
 
 nav > ul {
@@ -24,8 +27,7 @@ nav > ul {
 li {
     display: inline-block;
     margin: 0px 30px;
-    font-family: 'Permanent Marker', 'Gill Sans', Calibri, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #F27059;
 }
 
@@ -34,7 +36,34 @@ li:hover {
     cursor: pointer;
 }
 
-.main-body {
+main {
     background-color: #F5F5F5;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+img {
+    height: 350px;
+    margin-right: 150px;
+    border: 2px solid #F27059;
+    border-radius: 100%;
+}
+
+button {
+    height: 55px;
+    width: 210px;
+    margin: 20px;
+    border: 2px solid #F27059;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    color: #F27059;
+    font-size: 1.4em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #F27059;
+    color: #F5F5F5;
 }
