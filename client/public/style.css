@@ -55,11 +55,24 @@ main {
     grid-column: span 2;
 }
 
-main > img {
+.profile-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-photo {
     height: 350px;
     border: 2px solid #5603AD;
     border-radius: 100%;
     padding: 3px;
+}
+
+.profile-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 button {

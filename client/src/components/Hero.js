@@ -1,6 +1,8 @@
 import React from 'react'
 import photo from '../images/profile-photo.jpg';
 import resume from '../files/TempResume.pdf'
+import linkedInLogo from '../images/linkedin.svg'
+import githubLogo from '../images/github.svg'
 
 export default function Hero({contactFormRef}) {
     return (
@@ -12,7 +14,17 @@ export default function Hero({contactFormRef}) {
                     onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})}
                 >Contact Me</button>
             </div>
-            <img src={photo} alt="Daniel Reagan"/>
+            <div className="profile-flex">
+                <img className="profile-photo" src={photo} alt="Daniel Reagan"/>
+                <div className="profile-logos">
+                <a href="https://www.linkedin.com/in/dsreagan/" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedInLogo} alt="Daniel Reagan"/>
+                </a>
+                <a href="https://github.com/dsreagan" target="_blank" rel="noopener noreferrer">
+                    <img src={githubLogo} alt="Daniel Reagan"/>
+                </a>
+                </div>
+            </div>
         </main>
     )
 }
