@@ -27,12 +27,12 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     margin: 0px 30px;
-    font-size: 1.6em;
-    color: #F27059;
+    font-size: 1.7rem;
+    color: #04E762;;
 }
 
 nav > ul > li:hover {
-    color: #F7B267;
+    color: #5603AD;
     cursor: pointer;
 }
 
@@ -41,13 +41,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 80px;
     margin: 100px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.span-2 {
+    grid-column: span 2;
 }
 
 main > img {
     height: 350px;
-    margin-right: 150px;
-    border: 2px solid #F27059;
+    border: 2px solid #5603AD;
     border-radius: 100%;
     padding: 3px;
 }
@@ -55,24 +65,24 @@ main > img {
 button {
     height: 55px;
     width: 210px;
-    margin: 20px;
-    border: 2px solid #F27059;
-    border-radius: 30px;
-    background-color: #F5F5F5;
-    color: #F27059;
-    font-size: 1.4em;
+    border-radius: 10px;
+    border: none;
+    background-color: #04E762;
+    color: #F5F5F5;
+    font-size: 1.6em;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #F27059;
-    color: #F5F5F5;
+    color: #04E762;
+    background-color: #F5F5F5;
+    border: 3px solid #04E762;
 }
 
 .contact {
     margin-top: 160px;
     text-align: center;
-    color: #F27059;
+    color: #5603AD;
 }
 
 .contact-grid {
@@ -100,3 +110,7 @@ input, textarea {
 .contact > button {
     margin: 40px;
 }
+
+/* #F7B267 - pink
+#F27059 - white-grey
+#F5F5F5 - salmon */

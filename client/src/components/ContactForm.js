@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
+import React, {forwardRef, useState} from 'react'
 
-export default function ContactForm() {
+function ContactForm(props, ref) {
 
     const [formData, setFormData] = useState(
         {name: "", email: "", message: ""}
     )
 
-    console.log(formData)
+    console.log(formData) //testing
 
     function handleChange(event) {
         setFormData(prevFormData => ({
@@ -16,7 +16,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div className="contact">
+        <div ref={ref} className="contact">
             <h1>Contact Me</h1>
             <div className="contact-grid">
                 <input
@@ -44,3 +44,5 @@ export default function ContactForm() {
         </div>
     )
 }
+
+export default forwardRef(ContactForm)
