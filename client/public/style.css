@@ -80,9 +80,10 @@ button:hover {
 }
 
 .contact {
-    margin-top: 160px;
+    margin: 200px;
     text-align: center;
     color: #5603AD;
+    padding-bottom: 80px;
 }
 
 .contact-grid {
@@ -90,7 +91,7 @@ button:hover {
     gap: 1.4em;
     grid-template-columns: repeat(2, 300px);
     justify-content: center;
-    margin-top: 30px;
+    margin: 40px 0px;
 }
 
 input, textarea {
@@ -106,11 +107,3 @@ input, textarea {
     height: 128px;
     grid-column: span 2;
 }
-
-.contact > button {
-    margin: 40px;
-}
-
-/* #F7B267 - pink
-#F27059 - white-grey
-#F5F5F5 - salmon */
