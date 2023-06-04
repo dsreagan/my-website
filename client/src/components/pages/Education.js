@@ -1,6 +1,8 @@
 export default function EducationPage() {
   
     return (
-      <h1>Ed Page</h1>
+      <div className="under-nav">
+        <h1>Proj Page</h1>
+      </div>
     )
   }

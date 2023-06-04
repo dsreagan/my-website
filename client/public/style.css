@@ -9,29 +9,37 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: end;
     justify-content: flex-end;
     height: 80px;
     width: 100%;
-    background-image: linear-gradient(#F5F5F5 80%, #e0e0e052);
+    /* background-image: linear-gradient(#F5F5F5 80%, #e0e0e052); */
+    background-image: linear-gradient(#F5F5F5 86%, #e0e0e0c5); 
 }
 
 nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
     list-style-type: none;
     margin: 0px 60px;
 }
 
 nav > ul > li {
-    display: inline-block;
-    margin: 0px 30px;
     font-size: 1.7rem;
-    color: #04E762;;
 }
 
 nav > ul > li:hover {
     color: #5603AD;
     cursor: pointer;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #04E762;
 }
 
 main {
@@ -40,7 +48,11 @@ main {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin: 100px;
+    margin: 160px;
+}
+
+.under-nav {
+    margin: 80px;
 }
 
 .hero-grid {

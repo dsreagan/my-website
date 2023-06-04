@@ -3,18 +3,20 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
+        <header>
         <nav>
             <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link className="nav-item" to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/projects">Projects</Link>
+                  <Link className="nav-item" to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <Link to="/education">Education</Link>
+                  <Link className="nav-item" to="/education">Education</Link>
                 </li>
             </ul>
         </nav>
+        </header>
     )
 }
