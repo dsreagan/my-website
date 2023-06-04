@@ -14,8 +14,6 @@ nav {
     justify-content: flex-end;
     height: 80px;
     width: 100%;
-    /* position: fixed;
-    top: 0; */
     background-image: linear-gradient(#F5F5F5 80%, #e0e0e052);
 }
 

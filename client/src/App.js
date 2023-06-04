@@ -1,17 +1,22 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import ContactForm from './components/ContactForm'
+import Home from './components/pages/Home'
+import Education from './components/pages/Education'
+import Projects from './components/pages/Projects'
+import { Routes, Route } from 'react-router-dom'
 
 export default function App() {
-
-  const contactFormRef = useRef(null)
 
   return (
     <div className="App">
       <Navbar />
-      <Hero contactFormRef={contactFormRef} />  
-      <ContactForm ref={contactFormRef} />
+      <container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
+        </Routes>
+      </container>
     </div>
   )
 }
