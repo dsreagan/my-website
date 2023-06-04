@@ -1,6 +1,6 @@
 {
-  "homepage": "http://dsreagan.github.io/personal-website/client",
-  "name": "client",
+  
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
