@@ -6,9 +6,9 @@ import githubLogo from '../images/github.svg'
 
 export default function Hero({contactFormRef}) {
     return (
-        <main>
+        <main className="hero">
             <div className="hero-grid">
-                <h1 className="span-2">Info about me...</h1>
+                <h1 className="span-2">Welcome to my website</h1>
                 <a href={resume} download="Resume"><button>Get Resume</button></a>
                 <button 
                     onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})}
