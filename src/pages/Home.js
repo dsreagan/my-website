@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import Hero from '../Hero'
-import ContactForm from '../ContactForm'
+import Hero from '../components/Hero'
+import ContactForm from '../components/ContactForm'
 
 export default function EducationPage() {
   
