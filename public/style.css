@@ -96,14 +96,13 @@ button {
     color: #F5F5F5;
     font-weight: 600;
     font-size: 1.4rem;
-    transition: background-color .2s ease;
 }
 
 button:hover {
     cursor: pointer;
     color: #3F8EFC;
     background-color: #F5F5F5; 
-    /* border: 2px solid #3F8EFC; */
+    border: 2px solid #3F8EFC;
 }
 
 .btn-test {
@@ -155,5 +154,3 @@ input, textarea {
     height: 128px;
     grid-column: span 2;
 }
-
-/* 06a77d - green */
