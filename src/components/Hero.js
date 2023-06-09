@@ -10,7 +10,7 @@ export default function Hero({contactFormRef}) {
             <div className="hero-grid">
                 <h1 className="span-2">Welcome to my website</h1>
                 <a href={resume} download="Resume"><button>Get Resume</button></a>
-                <button 
+                <button className="btn-test"
                     onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})}
                 >Contact Me</button>
             </div>

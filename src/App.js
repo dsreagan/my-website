@@ -1,28 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Education from './pages/Education'
 import Projects from './pages/Projects'
 
 export default function App() {
+  
+  const [page, setPage] = useState("Home")
 
-  let component
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home />
+  let Component
+  switch (page) {
+    case "Home":
+      Component = Home
       break
-    case "/projects":
-      component = <Projects />
+    case "Education":
+      Component = Education
       break
-    case "/education":
-      component = <Education />
+    case "Projects":
+      Component = Projects
       break
+    default:
+      Component = Home
   }
 
   return (
     <div className="App">
-      <Navbar />
-      {component}
+      <Navbar setPage={setPage} />
+      <Component />
     </div>
   )
 }

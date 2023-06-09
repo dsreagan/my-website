@@ -1,18 +1,18 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
         <header>
         <nav>
             <ul>
-                <li>
-                  <a className="nav-item" href="/">Home</a>
+                <li onClick={() => props.setPage("Home")} className="nav-item">
+                  Home
                 </li>
-                <li>
-                  <a className="nav-item" href="/projects">Projects</a>
+                <li onClick={() => props.setPage("Projects")} className="nav-item">
+                  Projects
                 </li>
-                <li>
-                  <a className="nav-item" href="/education">Education</a>
+                <li onClick={() => props.setPage("Education")} className="nav-item">
+                  Education
                 </li>
             </ul>
         </nav>
