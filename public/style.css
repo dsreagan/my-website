@@ -116,7 +116,7 @@ button:hover {
     font-weight: 600;
     font-size: 1.4rem;
     box-shadow: -2px 2px #F5F5F5; 
-    transition: box-shadow .6s ease;
+    transition: box-shadow .4s ease;
 }
 
 .btn-test:hover {
