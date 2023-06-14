@@ -1,8 +1,21 @@
-export default function EducationPage() {
+import Project from '../components/Project'
+import projects from '../data/projects-data'
+
+export default function Projects() {
   
     return (
       <div className="under-nav">
-        <h1>Proj Page</h1>
+
+        {projects.map((project) => (
+          <Project 
+            title={project.title} 
+            subTitle={project.subTitle}
+            info={project.info}
+            link={project.link}
+          />
+          )
+        )}
+
       </div>
     )
   }

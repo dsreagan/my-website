@@ -5,6 +5,7 @@
 body {
     margin: 0;
     background-color: #BCB8B1;
+    overflow-y: scroll;
 }
 
 nav {
@@ -62,9 +63,30 @@ nav > ul {
     max-width: min-content;
 }
 
+/* Utilities */
+
 .span-2 {
     grid-column: span 2;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
     font-weight: 700;
+}
+
+.hero-header {
+    font-size: 1.7rem;
+}
+
+.hero-subheader {
+    font-size: 1.2rem;
 }
 
 .profile-flex {
@@ -102,10 +124,10 @@ button:hover {
     cursor: pointer;
     color: #3F8EFC;
     background-color: #F5F5F5; 
-    border: 2px solid #3F8EFC;
+    border: 1px solid #3F8EFC;
 }
 
-.btn-test {
+.hero-btn {
     height: 50px;
     width: 190px;
     border-radius: 5px;
@@ -113,12 +135,12 @@ button:hover {
     background-color: #3F8EFC;
     color: #F5F5F5;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     box-shadow: -2px 2px #F5F5F5; 
     transition: box-shadow .4s ease;
 }
 
-.btn-test:hover {
+.hero-btn:hover {
     cursor: pointer;
     color: #F5F5F5;
     border: none;

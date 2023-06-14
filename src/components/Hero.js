@@ -3,16 +3,20 @@ import photo from '../images/profile-photo.jpg';
 import resume from '../files/TempResume.pdf'
 import linkedInLogo from '../images/linkedin.svg'
 import githubLogo from '../images/github.svg'
+import heroIntro from '../data/hero-data'
 
 export default function Hero({contactFormRef}) {
     return (
         <main className="hero">
             <div className="hero-grid">
-                <h1 className="span-2">Welcome to my website</h1>
+                <section className="span-2">
+                    <h1 className="hero-header font-700">{heroIntro.header}</h1>
+                    <h3 className="hero-subheader font-600">{heroIntro.subHeader}</h3>
+                </section>
                 <a href={resume} download="Resume">
-                    <button className="btn-test">Get Resume</button>
+                    <button className="hero-btn">Get Resume</button>
                 </a>
-                <button className="btn-test"
+                <button className="hero-btn"
                     onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})}
                 >Contact Me</button>
             </div>
