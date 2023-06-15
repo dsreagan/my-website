@@ -1,8 +1,8 @@
 const projects = [
     {
-        "title": 'My Personal Website',
-        "subTitle": 'This website was built using React.',
-        "info": '',
+        "title": 'Personal Website',
+        "subTitle": 'This website was built using ReactJS',
+        "info": 'Info goes here...',
         "link": 'https://dsreagan.com'
     },
     {

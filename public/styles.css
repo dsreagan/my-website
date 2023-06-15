@@ -47,23 +47,22 @@ nav > ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 120px;
     padding-top: 45px;
-}
-
-/* temporary */
-.under-nav { 
-    margin: 80px;
 }
 
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 50px;
     max-width: min-content;
 }
 
 /* Utilities */
+
+.under-nav { 
+    margin-top: 80px;
+}
 
 .span-2 {
     grid-column: span 2;
@@ -81,12 +80,36 @@ nav > ul {
     font-weight: 700;
 }
 
+.font-700-ital {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.font-medium {
+    font-size: 1.2rem;
+}
+
+.font-large {
+    font-size: 2.2rem;
+}
+
+.white {
+    color: #F5F5F5;
+}
+
+.black {
+    color: #252323;
+}
+
 .hero-header {
-    font-size: 1.7rem;
+    font-size: 2.4rem;
+    text-shadow: 1px 1px #F5F5F5;
+    color: #252323;
 }
 
 .hero-subheader {
     font-size: 1.2rem;
+    color: #252323dc;
 }
 
 .profile-flex {
@@ -175,4 +198,45 @@ input, textarea {
 .contact-grid > textarea {
     height: 128px;
     grid-column: span 2;
+}
+
+.projects-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px;
+}
+
+.project {
+    display: block;
+}
+
+.project-title {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 2.6rem;
+    color: #3F8EFC;
+    text-shadow: 1px 1px #252323;
+}
+
+.project-subtitle {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f5f5f5cf;
+    font-size: 1.4rem;
+}
+
+.project-info {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.project-link {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #252323;
 }

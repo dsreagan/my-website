@@ -4,7 +4,7 @@ import projects from '../data/projects-data'
 export default function Projects() {
   
     return (
-      <div className="under-nav">
+      <div className="projects-flex">
 
         {projects.map((project) => (
           <Project 

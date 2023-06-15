@@ -10,7 +10,7 @@ export default function Hero({contactFormRef}) {
         <main className="hero">
             <div className="hero-grid">
                 <section className="span-2">
-                    <h1 className="hero-header font-700">{heroIntro.header}</h1>
+                    <h1 className="hero-header font-700-ital">{heroIntro.header}</h1>
                     <h3 className="hero-subheader font-600">{heroIntro.subHeader}</h3>
                 </section>
                 <a href={resume} download="Resume">
