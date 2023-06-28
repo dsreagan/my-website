@@ -1,6 +1,9 @@
 const heroIntro = {
     "header": "Welcome to my website!",
-    "subHeader": "I'm Daniel Reagan front-end web designer and developer. With a passion for..."
+    "subHeader1": `I'm `,
+    "name": "Daniel Reagan",
+    "subHeader2": `, a front-end web designer and developer 
+    with a passion for creating interactive and responsive web applications!`
 }
 
 export default heroIntro

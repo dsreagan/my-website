@@ -10,11 +10,13 @@ export default function Hero({contactFormRef}) {
         <main className="hero">
             <div className="hero-grid">
                 <section className="span-2">
-                    <h1 className="hero-header font-700-ital">{heroIntro.header}</h1>
-                    <h3 className="hero-subheader font-600">{heroIntro.subHeader}</h3>
+                    <h1 className="hero-header">{heroIntro.header}</h1>
+                    <h3 className="hero-subheader">
+                        {heroIntro.subHeader1}<span>{heroIntro.name}</span>{heroIntro.subHeader2}
+                    </h3>
                 </section>
                 <a href={resume} download="Resume">
-                    <button className="hero-btn">Get Resume</button>
+                <button className="hero-btn">Get Resume</button>
                 </a>
                 <button className="hero-btn"
                     onClick={() => contactFormRef.current.scrollIntoView({behavior: 'smooth'})}
@@ -23,12 +25,12 @@ export default function Hero({contactFormRef}) {
             <div className="profile-flex">
                 <img className="profile-photo" src={photo} alt="Daniel Reagan"/>
                 <div className="profile-logos">
-                <a href="https://www.linkedin.com/in/dsreagan/" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedInLogo} alt="Daniel Reagan"/>
-                </a>
-                <a href="https://github.com/dsreagan" target="_blank" rel="noopener noreferrer">
-                    <img src={githubLogo} alt="Daniel Reagan"/>
-                </a>
+                    <a href="https://www.linkedin.com/in/dsreagan/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedInLogo} alt="Daniel Reagan"/>
+                    </a>
+                    <a href="https://github.com/dsreagan" target="_blank" rel="noopener noreferrer">
+                        <img src={githubLogo} alt="Daniel Reagan"/>
+                    </a>
                 </div>
             </div>
         </main>

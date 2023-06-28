@@ -8,10 +8,11 @@ export default function Projects() {
 
         {projects.map((project) => (
           <Project 
-            title={project.title} 
+            title={project.title}
             subTitle={project.subTitle}
             info={project.info}
-            link={project.link}
+            url={project.url}
+            gitRepo={project.gitRepo}
           />
           )
         )}

@@ -3,7 +3,18 @@ import emailjs from "emailjs-com"
 
 function ContactForm(props, ref) {
 
-    function sendEmail(e) {
+    const [formData, setFormData] = React.useState(
+        {name: "", email: "", message: ""}
+    )
+
+    function handleChange(event) {
+        setFormData(prevFormData => ({
+            ...prevFormData,
+            [event.target.name]: event.target.value
+        }))
+    }
+
+    function handleSubmit(e) {
         e.preventDefault()
 
         emailjs.sendForm('service_auv0vf6', 'template_1', e.target, '38BrczIT3iHsrFIs6')
@@ -12,23 +23,13 @@ function ContactForm(props, ref) {
         }, (error) => {
             console.log(error.text)
         })
-        e.target.reset()
+        
+        setFormData({name: "", email: "", message: ""})
     }
-
-    // const [formData, setFormData] = useState(
-    //     {name: "", email: "", message: ""}
-    // )
-
-    // function handleChange(event) {
-    //     setFormData(prevFormData => ({
-    //         ...prevFormData,
-    //         [event.target.name]: event.target.value
-    //     }))
-    // }
 
     return (
         <div ref={ref} className="contact">
-        <form onSubmit={sendEmail}>
+        <form onSubmit={handleSubmit}>
             <h1>Contact Me</h1>
             <div className="contact-grid">
                 <input
@@ -36,23 +37,23 @@ function ContactForm(props, ref) {
                     name="name"
                     placeholder="Your Name"
 
-                    // onChange={handleChange}// Would have to reset state after form is submitted.
-                    // value={formData.name}//
+                    onChange={handleChange}// Would have to reset state after form is submitted.
+                    value={formData.name}//
                 />
                 <input 
                     type="email"
                     name="email"
                     placeholder="Email"
 
-                    // onChange={handleChange}
-                    // value={formData.email}
+                    onChange={handleChange}
+                    value={formData.email}
                 />
                 <textarea 
                     placeholder="How can I help you?"
                     name="message"
 
-                    // onChange={handleChange}
-                    // value={formData.message}                    
+                    onChange={handleChange}
+                    value={formData.message}                    
                 />
             </div>
             <button>Submit</button>
