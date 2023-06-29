@@ -11,16 +11,18 @@ const projects = [
         "gitRepo": 'https://github.com/dsreagan/my-website'
     },
     {
-        "title": 'Test 2',
-        "subTitle": '',
+        "title": 'React Image Search',
+        "subTitle": 'ReactJS | CSS',
         "info": '',
-        "link": ''
+        "url": 'https://dsreagan-react-image-search.netlify.app',
+        "gitRepo": 'https://github.com/dsreagan/react-image-search'
     },
     {
         "title": 'Test 3',
         "subTitle": '',
         "info": '',
-        "link": ''
+        "url": '',
+        "gitRepo": ''
     },
 ]
 

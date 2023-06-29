@@ -32,33 +32,13 @@ nav > ul {
     font-size: 1.7rem;
     text-decoration: none;
     font-weight: 400;
-    color: #4a4e69;
+    color: #22223b;
 }
 
 .nav-item:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #22223b;
-}
-
-@media (max-width: 800px) {
-    nav {
-        height: 40px;
-        justify-content: center;
-    }
-    nav > ul {
-        gap: 36px;
-        margin: 0;
-    }
-    .nav-item {
-        font-size: 1.2rem;
-        text-decoration: none;
-        font-weight: 400;
-        color: #4a4e69;
-    }
-    .profile-flex {
-        margin-top: 36px;
-    }
+    color: #9a8c98;
 }
 
 .hero {
@@ -69,12 +49,6 @@ nav > ul {
     align-items: center;
     gap: 120px;
     padding-top: 45px;
-}
-
-@media (max-width: 1024px) {
-    .hero {
-        gap: 10px;
-    }
 }
 
 .hero-grid {
@@ -116,7 +90,7 @@ span {
 }
 
 .profile-photo {
-    max-height: 350px;
+    max-height: 360px;
     border: 2px solid #22223b;
     border-radius: 100%;
     padding: 3px;
@@ -141,14 +115,12 @@ button {
 
 button:hover {
     cursor: pointer;
-    color: #f2e9e4;
+    color: #22223b;
     background-color: #f2e9e4; 
     border: 1px solid #22223b;
 }
 
 .hero-btn {
-    height: 50px;
-    width: 190px;
     border-radius: 5px;
     border: none;
     background-color: #22223b;
@@ -160,11 +132,13 @@ button:hover {
 .hero-btn:hover {
     cursor: pointer;
     border: none;
+    color: #f2e9e4;
     background-color: #22223b;   
     box-shadow: -8px 10px #f2e9e4;
 }
 
 .contact {
+    margin: 0 36px;
     text-align: center;
     color: #f2e9e4;
     padding-bottom: 80px;
@@ -281,4 +255,67 @@ input, textarea {
 
 .utd-emblem {
     width: 200px;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    nav {
+        height: 40px;
+        justify-content: center;
+    }
+    nav > ul {
+        gap: 36px;
+        margin: 0;
+    }
+    .nav-item {
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 400;
+        color: #4a4e69;
+    }
+    .hero {
+        padding-top: 32px;
+    }
+    .profile-flex {
+        margin-top: 36px;
+    }
+    .profile-photo {
+        height: 300px;
+    }
+    .hero-grid {
+        margin: 0px 36px;
+        gap: 36px;
+    }
+    button {
+        height: 48px;
+        width: 128px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 430px) {
+    .profile-photo {
+        height: 240px;
+    }
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+    } 
+    .hero-header {
+        font-size: 2rem;
+        text-shadow: 2px 2px #22223b;
+        color: #f2e9e4;
+    }
+    .hero-subheader {
+        font-size: 1rem;
+        color: #22223b;
+    }
+    .hero-grid {
+        margin-bottom: 36px;
+    }
 }

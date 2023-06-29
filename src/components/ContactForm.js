@@ -36,22 +36,19 @@ function ContactForm(props, ref) {
                     type="text"
                     name="name"
                     placeholder="Your Name"
-
-                    onChange={handleChange}// Would have to reset state after form is submitted.
-                    value={formData.name}//
+                    onChange={handleChange}
+                    value={formData.name}
                 />
                 <input 
                     type="email"
                     name="email"
                     placeholder="Email"
-
                     onChange={handleChange}
                     value={formData.email}
                 />
                 <textarea 
                     placeholder="How can I help you?"
                     name="message"
-
                     onChange={handleChange}
                     value={formData.message}                    
                 />
