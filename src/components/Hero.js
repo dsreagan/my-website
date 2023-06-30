@@ -10,8 +10,8 @@ export default function Hero({contactFormRef}) {
         <main className="hero">
             <div className="hero-grid">
                 <section className="span-2">
-                    <h1 className="hero-header">{heroIntro.header}</h1>
-                    <h3 className="hero-subheader">
+                    <h1 className="header">{heroIntro.header}</h1>
+                    <h3 className="subheader">
                         {heroIntro.subHeader1}<span>{heroIntro.name}</span>{heroIntro.subHeader2}
                     </h3>
                 </section>

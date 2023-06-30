@@ -4,8 +4,7 @@ import projects from '../data/projects-data'
 export default function Projects() {
   
     return (
-      <div className="projects-flex">
-
+      <div className="projects">
         {projects.map((project) => (
           <Project 
             title={project.title}
@@ -16,7 +15,6 @@ export default function Projects() {
           />
           )
         )}
-
       </div>
     )
   }

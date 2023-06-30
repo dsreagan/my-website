@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(to bottom right, #9a8c98, #4a4e69);
+    background: linear-gradient(to bottom, #57CC99, #38A3A5);
     overflow-y: scroll;
 }
 
@@ -16,7 +16,7 @@ nav {
     justify-content: flex-end;
     height: 64px;
     width: 100%;
-    background-color: #f2e9e4;
+    background-color: #F5F5F5;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
@@ -32,13 +32,13 @@ nav > ul {
     font-size: 1.7rem;
     text-decoration: none;
     font-weight: 400;
-    color: #22223b;
+    color: #22577A;
 }
 
 .nav-item:hover {
     cursor: pointer;
     text-decoration: none;
-    color: #9a8c98;
+    color: #80ED99;
 }
 
 .hero {
@@ -67,19 +67,24 @@ nav > ul {
 
 /*  */
 
-.hero-header {
+.header {
     font-size: 2.4rem;
-    text-shadow: 2px 2px #22223b;
-    color: #f2e9e4;
+    font-weight: 700;
+    text-shadow: 2px 2px #22577A;
+    color: #F5F5F5;
 }
 
 span {
-    color: #f2e9e4;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
-.hero-subheader {
-    font-size: 1.2rem;
-    color: #22223b;
+.subheader {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #22577A;
 }
 
 .profile-flex {
@@ -91,7 +96,7 @@ span {
 
 .profile-photo {
     max-height: 360px;
-    border: 2px solid #22223b;
+    border: 2px solid #22577A;
     border-radius: 100%;
     padding: 3px;
 }
@@ -107,40 +112,39 @@ button {
     width: 190px;
     border-radius: 5px;
     border: none;
-    background-color: #22223b;
-    color: #f2e9e4;
+    background-color: #22577A;
+    background-size: cover;
+    color: #F5F5F5;
     font-weight: 600;
     font-size: 1.2rem;
 }
 
 button:hover {
     cursor: pointer;
-    color: #22223b;
-    background-color: #f2e9e4; 
-    border: 1px solid #22223b;
+    color: #22577A;
+    background-color: #F5F5F5; 
+    border: 1px solid #22577A;
 }
 
 .hero-btn {
     border-radius: 5px;
     border: none;
-    background-color: #22223b;
-    color: #f2e9e4;
-    box-shadow: -2px 2px #f2e9e4; 
+    box-shadow: -2px 2px #F5F5F5; 
     transition: box-shadow .4s ease;
 }
 
 .hero-btn:hover {
     cursor: pointer;
     border: none;
-    color: #f2e9e4;
-    background-color: #22223b;   
-    box-shadow: -8px 10px #f2e9e4;
+    color: #F5F5F5;
+    background-color: #22577A;   
+    box-shadow: -8px 10px #F5F5F5;
 }
 
 .contact {
     margin: 0 36px;
     text-align: center;
-    color: #f2e9e4;
+    color: #F5F5F5;
     padding-bottom: 80px;
 }
 
@@ -166,45 +170,47 @@ input, textarea {
     grid-column: span 2;
 }
 
-.projects-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 100px;
+.projects {
+    display: block;
+    padding:  100px 260px;
 }
 
 .project {
     display: block;
+    text-align: center;
+    margin-bottom: 36px;
 }
 
 .project-title {
     margin: 0px;
     padding: 0px;
-    font-weight: 600;
-    font-size: 2.6rem;
-    font-style: italic;
-    color: #22223b;
-    text-shadow: 1px 1px #22223b;
 }
 
 .project-subtitle {
     margin: 0px;
     padding: 0px;
-    font-weight: 400;
-    color: #f2e9e4cf;
-    font-size: 1.4rem;
 }
 
 .project-info {
+    font-size: 1.45rem;
     font-weight: 400;
-    font-size: 1.2rem;
+    color: #F5F5F5;
+    margin-bottom: 10px;
 }
 
-.project-link {
-    font-weight: 400;
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.link {
+    font-weight: 600;
     font-style: italic;
     font-size: 1.4rem;
-    color: #22223b;
+    color: #22577A;
+    text-decoration: none;
 }
 
 .education-grid {
@@ -214,31 +220,10 @@ input, textarea {
     padding: 150px;
 }
 
-.education-title > h1 {
-    margin: 0px 150px 0px 0px;
-    padding: 0px;
-    font-weight: 600;
-    font-size: 2.6rem;
-    color: #22223b;
-    text-shadow: 1px 1px #22223b;
-}
-
-.education-title > h3 {
-    margin: 0px;
-    padding: 0px;
-    font-weight: 400;
-    font-style: italic;
-    color: #f2e9e4cf;
-    font-size: 1.4rem;
-}
-
 .coursework-header {
     margin: 0px;
     padding: 0px;
-    font-weight: 600;
-    font-size: 2.6rem;
-    color: #22223b;
-    text-shadow: 1px 1px #22223b;
+    
 }
 
 .course-list {
@@ -276,7 +261,6 @@ input, textarea {
         font-size: 1.2rem;
         text-decoration: none;
         font-weight: 400;
-        color: #4a4e69;
     }
     .hero {
         padding-top: 32px;
@@ -309,7 +293,7 @@ input, textarea {
     .hero-header {
         font-size: 2rem;
         text-shadow: 2px 2px #22223b;
-        color: #f2e9e4;
+        color: #F5F5F5;
     }
     .hero-subheader {
         font-size: 1rem;

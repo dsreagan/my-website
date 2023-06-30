@@ -3,8 +3,15 @@ const educationInfo = {
     "subHeader": "Univeristy of Texas at Dallas 2023",
     "courseworkHeader": "Coursework", 
     "courses": [
-        "Algorithmic Analysis and Data Structures", 
-        "C++ Programming in a Unix Environment"
+        "Data Structures and Algorithmic Analysis",
+        "Advanced Algorithm Design and Analysis",
+        "Database Systems",
+        "Advanced Java",
+        "Data Analysis",
+        "Software Project Planning", 
+        "Artificial Intelligence",
+        "Operating Systems Concepts",
+        "C/C++ Programming in a UNIX environment"
     ]
 }
 

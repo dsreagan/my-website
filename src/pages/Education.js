@@ -7,15 +7,15 @@ export default function Education() {
   
     return (
       <div className="education-grid">
-        <section className="education-title">
-          <h1>{header}</h1>
+        <section>
+          <h1 className="header">{header}</h1>
           <h3>{subHeader}</h3>
         </section>
         <img src={utdEmblem} 
           className="utd-emblem"
           alt="University of Texas at Dallas Emblem" />
         <section>
-          <h1 className="coursework-header">{courseworkHeader}</h1>
+          <h1 className="header">{courseworkHeader}</h1>
           <ul className="course-list">
             {courses.map(course => <li>{course}</li>)}
           </ul>

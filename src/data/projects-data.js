@@ -2,11 +2,10 @@ const projects = [
     {
         "title": 'Personal Website',
         "subTitle": 'ReactJS | React Router | CSS',
-        "info": `This website utilizes the power of modern ReactJS and CSS. 
-                React sentence...
-                CSS sentence...
-                React-Router allows different page components to be rendered dependent on path.
-                These tools come together to blah blah blah...`,
+        "info": `My personal website, located at https://dsreagan.com, utilizes the flexibility of 
+        modern React and CSS. The site leverages React-Router to allow for a lightweight multi page 
+        React only site. Various CSS tools are employed, including CSS grid, flex, and media queries, 
+        to create a fully responsive and mobile-friendly site. `,
         "url": 'https://dsreagan.com',
         "gitRepo": 'https://github.com/dsreagan/my-website'
     },
