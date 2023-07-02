@@ -1,6 +1,6 @@
 import React from 'react'
 import photo from '../images/profile-photo.jpg';
-import resume from '../files/TempResume.pdf'
+import resume from '../files/DanielReaganResume.pdf'
 import linkedInLogo from '../images/linkedin.svg'
 import githubLogo from '../images/github.svg'
 import heroIntro from '../data/hero-data'
@@ -15,7 +15,7 @@ export default function Hero({contactFormRef}) {
                         {heroIntro.subHeader1}<span>{heroIntro.name}</span>{heroIntro.subHeader2}
                     </h3>
                 </section>
-                <a href={resume} download="Resume">
+                <a href={resume} download="DanielReaganResume">
                 <button className="hero-btn">Get Resume</button>
                 </a>
                 <button className="hero-btn"
