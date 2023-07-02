@@ -213,38 +213,50 @@ input, textarea {
     text-decoration: none;
 }
 
-.education-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.education {
+    display: block;
+    text-align: center;
     gap: 20px;
-    padding: 150px;
+    padding: 100px;
+}
+
+.ed-header {
+    margin: 30px 0 0 0;
+}
+
+.ed-subheader {
+    margin: 0 0 36px 0;
+    font-size: 1.4rem;
 }
 
 .coursework-header {
     margin: 0px;
     padding: 0px;
-    
 }
 
 .course-list {
     list-style-type: none;
-    padding-left: 0;
-    margin: 2px;
+    padding: 0;
+    margin: 0;
 }
 
 .course-list > li {
     margin: 5px;
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #22577A;
 }
 
 .utd-emblem {
-    width: 200px;
+    width: 160px;
 }
 
 @media (max-width: 1024px) {
     .hero {
         gap: 10px;
+    }
+    .projects {
+    padding:  100px 160px;
     }
 }
 
@@ -280,6 +292,12 @@ input, textarea {
         width: 128px;
         font-size: 1em;
     }
+    .projects {
+        padding:  64px 64px;
+    }
+    .project {
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -290,16 +308,25 @@ input, textarea {
         display: flex;
         flex-direction: column;
     } 
-    .hero-header {
+    .header {
         font-size: 2rem;
-        text-shadow: 2px 2px #22223b;
-        color: #F5F5F5;
     }
-    .hero-subheader {
+    .subheader {
         font-size: 1rem;
-        color: #22223b;
     }
     .hero-grid {
         margin-bottom: 36px;
+    }
+    .projects {
+        padding:  64px 36px;
+    }
+    .project-info {
+        font-size: 1.1rem;
+    }
+    .project-links {
+        gap: 24px;
+    }
+    .link {
+        font-size: 1.1rem;
     }
 }
