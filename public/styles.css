@@ -216,7 +216,6 @@ input, textarea {
 .education {
     display: block;
     text-align: center;
-    gap: 20px;
     padding: 100px;
 }
 
@@ -293,10 +292,13 @@ input, textarea {
         font-size: 1em;
     }
     .projects {
-        padding:  64px 64px;
+        padding: 64px;
     }
     .project {
         margin-bottom: 16px;
+    }
+    .education {
+        padding: 80px;
     }
 }
 
@@ -328,5 +330,8 @@ input, textarea {
     }
     .link {
         font-size: 1.1rem;
+    }
+    .education {
+        padding: 70px 36px;
     }
 }
